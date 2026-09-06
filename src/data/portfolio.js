@@ -224,7 +224,7 @@ export const experience = [
     role: 'Project Management Intern',
     company: 'Skill Squirrel',
     location: 'Mississauga, ON',
-    logo: `${import.meta.env.BASE_URL}images/skillsquirrel.jpg`,
+    logo: `${import.meta.env.BASE_URL}images/skillsquirrel.png`,
     summary:
       'Supported software quality, project coordination and UI/UX activities across a collaborative delivery team.',
     bullets: [
