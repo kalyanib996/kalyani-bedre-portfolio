@@ -17,21 +17,53 @@ function ProjectVisual({ project }) {
     return (
       <div className="relative flex h-full min-h-[315px] items-center justify-center overflow-hidden bg-[#0a0d13]">
         <div className="absolute inset-0 ai-grid opacity-60" />
-        <div className="absolute h-52 w-36 rounded-[4rem_3rem_2.5rem_2rem] border border-[#a7ff5a]/45 bg-gradient-to-b from-white/[0.07] to-transparent shadow-[0_0_80px_rgba(167,255,90,.08)]" />
-        <div className="absolute h-64 w-48 rounded-2xl border border-[#a7ff5a]/55">
+
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_40%,rgba(167,255,90,0.06),transparent_35%),radial-gradient(circle_at_80%_20%,rgba(103,59,255,0.12),transparent_28%)]" />
+
+        {/* scanner frame */}
+        <div className="absolute h-64 w-48 rounded-2xl border border-[#a7ff5a]/55 shadow-[0_0_40px_rgba(167,255,90,.06)]">
           <span className="absolute -left-px -top-px h-5 w-5 border-l-2 border-t-2 border-[#a7ff5a]" />
           <span className="absolute -right-px -top-px h-5 w-5 border-r-2 border-t-2 border-[#a7ff5a]" />
           <span className="absolute -bottom-px -left-px h-5 w-5 border-b-2 border-l-2 border-[#a7ff5a]" />
           <span className="absolute -bottom-px -right-px h-5 w-5 border-b-2 border-r-2 border-[#a7ff5a]" />
         </div>
-        <div className="scan-line absolute left-[18%] right-[18%] h-px bg-[#a7ff5a] shadow-[0_0_18px_#a7ff5a]" />
-        <div className="absolute bottom-7 left-7 rounded-full border border-[#a7ff5a]/25 bg-[#a7ff5a]/10 px-3 py-1.5 font-mono text-xs text-[#b9ff7a]">
-          pole · 82.5% validation
+
+        {/* pole */}
+        <div className="absolute flex items-center justify-center">
+          {/* wires */}
+          <div className="absolute top-[76px] left-1/2 h-px w-[115px] -translate-x-[140px] rotate-[4deg] bg-white/20" />
+          <div className="absolute top-[76px] left-1/2 h-px w-[115px] translate-x-[25px] -rotate-[4deg] bg-white/20" />
+
+          {/* cross arm */}
+          <div className="absolute top-[72px] left-1/2 h-[8px] w-[96px] -translate-x-1/2 rounded-full bg-[#7d6544] shadow-[0_0_10px_rgba(0,0,0,.25)]" />
+
+          {/* insulators */}
+          <div className="absolute top-[69px] left-[calc(50%-34px)] h-3 w-3 rounded-full bg-[#d9c39e]" />
+          <div className="absolute top-[69px] left-[calc(50%-6px)] h-3 w-3 rounded-full bg-[#d9c39e]" />
+          <div className="absolute top-[69px] left-[calc(50%+22px)] h-3 w-3 rounded-full bg-[#d9c39e]" />
+
+          {/* pole body */}
+          <div className="relative h-[185px] w-[18px] rounded-full bg-gradient-to-b from-[#9e845f] via-[#7b6243] to-[#4f3d28] shadow-[0_12px_30px_rgba(0,0,0,.35)] group-hover:scale-[1.02] transition duration-300">
+            <div className="absolute -top-2 left-1/2 h-3 w-3 -translate-x-1/2 rounded-full bg-[#d9c39e]" />
+          </div>
+
+          {/* detection box */}
+          <div className="absolute top-[54px] left-1/2 h-[150px] w-[42px] -translate-x-1/2 rounded-xl border-2 border-[#a7ff5a] shadow-[0_0_18px_rgba(167,255,90,.22)]" />
         </div>
+
+        {/* scan line */}
+        <div className="scan-line absolute left-[18%] right-[18%] h-px bg-[#a7ff5a] shadow-[0_0_18px_#a7ff5a]" />
+
+        {/* top icon */}
         <ScanLine
           className="absolute right-7 top-7 text-[#a7ff5a]/65"
           size={24}
         />
+
+        {/* bottom badge */}
+        <div className="absolute bottom-7 left-7 rounded-full border border-[#a7ff5a]/25 bg-[#a7ff5a]/10 px-3 py-1.5 font-mono text-xs text-[#b9ff7a]">
+          pole detected · 82.5%
+        </div>
       </div>
     );
   }
