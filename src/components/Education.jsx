@@ -28,10 +28,7 @@ function EducationLogo({ item }) {
 function Education() {
   return (
     <section id="education" className="section-shell">
-      <SectionTitle
-        kicker="05 · Education"
-        title="Built on a strong foundation."
-      />
+      <SectionTitle kicker="Education" title="Built on a strong foundation." />
 
       <div className="grid gap-4 lg:grid-cols-3">
         {education.map((item, index) => (

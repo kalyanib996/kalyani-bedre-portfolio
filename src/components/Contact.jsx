@@ -23,7 +23,7 @@ function Contact() {
 
         <div className="relative">
           <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#a7ff5a]/55">
-            06 · Contact
+            Contact
           </p>
 
           <div className="mt-10 grid gap-12 lg:grid-cols-[1fr_auto] lg:items-end">

@@ -106,7 +106,7 @@ function Projects() {
   return (
     <section id="projects" className="section-shell">
       <SectionTitle
-        kicker="02 · Selected work"
+        kicker="Personal Projects"
         title="Projects that show how I build."
         description="AI experimentation, full-stack product development and frontend/API projects — with code and live demos where available."
       />

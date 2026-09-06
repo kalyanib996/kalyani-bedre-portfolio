@@ -35,7 +35,7 @@ function About() {
   return (
     <section id="about" className="section-shell">
       <SectionTitle
-        kicker="01 · About"
+        kicker="About"
         title="I build the whole experience."
         description="From reusable React interfaces to APIs, databases, authentication and production support."
       />

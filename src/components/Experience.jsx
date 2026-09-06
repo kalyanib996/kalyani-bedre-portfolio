@@ -31,7 +31,7 @@ function Experience() {
   return (
     <section id="experience" className="section-shell">
       <SectionTitle
-        kicker="04 · Experience"
+        kicker="  Experience"
         title="Production experience, end to end."
         description="Frontend, backend, APIs, authentication, data, testing, cloud and production troubleshooting across enterprise teams."
       />
