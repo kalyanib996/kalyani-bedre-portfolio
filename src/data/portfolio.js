@@ -43,7 +43,7 @@ export const projects = [
     eyebrow: 'Full-Stack E-commerce',
     year: '2024',
     description:
-      'A MERN e-commerce application with a responsive shopping experience, product APIs, cart workflows, reusable React components and backend data persistence.',
+      'A  e-commerce application with a responsive shopping experience, product APIs, cart workflows, reusable React components and backend data persistence.',
     highlights: [
       'Responsive React storefront',
       'REST API product workflows',
